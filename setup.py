@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 from pathlib import Path
-
-from setuptools import setup
+from setuptools import setup, find_packages
 
 NAME = 'voxaboxen'
 DESCRIPTION = (
@@ -52,7 +51,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=['voxaboxen'],
+    packages=find_packages(include=['voxaboxen', 'voxaboxen.*']),
     install_requires=REQUIRED,
     include_package_data=True,
     license='GNU Affero General Public License v3.0',
