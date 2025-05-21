@@ -11,7 +11,7 @@ authors = [
     {name = "Benjamin Hoffman, Maddie Cusimano", email = "benjamin@earthspecies.org"},
 ]
 license = {text = "GNU Affero General Public License v3.0"}
-requires-python = ">=3.7.0"
+requires-python = ">=3.8.0"
 classifiers = [
     "Topic :: Multimedia :: Sound/Audio :: Analysis",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
@@ -34,6 +34,7 @@ dependencies = [
     "matplotlib>=3.7.1",
     "seaborn>=0.12.2",
     "mir_eval>=0.7",
+    "torchvision>=0.15.2"
 ]
 
 [project.urls]

@@ -28,7 +28,7 @@ def train(model, args):
 
   optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, amsgrad = True)
   # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, args.step_size, gamma=0.1, last_epoch=- 1, verbose=False)
-  scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.n_epochs, eta_min=0, last_epoch=- 1, verbose=False)
+  scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.n_epochs, eta_min=0, last_epoch=- 1) #, verbose=False)
 
   train_evals = []
   learning_rates = []
